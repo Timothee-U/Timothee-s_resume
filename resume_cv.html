@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- =============================================================
-         Timothée Habarugaba Uwayesu — Interactive CV / Portfolio
+    <!-- Timothée Habarugaba Uwayesu — Interactive CV / Portfolio
          -------------------------------------------------------------
-         • Single‑page responsive website built 100 % with hand‑written
+         Single‑page responsive website built 100 % with hand‑written
            HTML, CSS & JS — no external frameworks (per course rules).
-         • All "front‑web" concepts & in‑class activities are applied
+         All "front‑web" concepts & in‑class activities are applied
            and labelled in context‑aware comments so you can trace how
-           each topic from our syllabus is implemented.
-         ============================================================= -->
+           each topic from our syllabus is implemented. -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Timothee Uwayesu — Online CV</title>
 
-    <!-- Google Fonts — added in Week 02 (Typography lesson) -->
+   
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,14 +20,9 @@
       rel="stylesheet"
     />
 
-    <!-- ======================== CSS ========================== -->
+    <!-- CSS -->
     <style>
-      /*
-      =============================================================
-      01 — Design Tokens (Week 04: CSS Custom Properties)
-      ============================================================= */
-      :root {
-        /* Personalised palette — chosen to match Timothée’s brand */
+       :root {
         --uwayesu-blue: #165a96;
         --uwayesu-denim: #0e3c5b;
         --uwayesu-mint: #17b88f;
@@ -39,7 +32,7 @@
         --font-main: "Montserrat", sans-serif;
       }
 
-      /* Global Reset (Week 01: CSS Reset & Box Sizing) */
+      /* CSS Reset & Box Sizing */
       *,
       *::before,
       *::after {
@@ -48,10 +41,7 @@
         padding: 0;
       }
 
-      /*
-      =============================================================
-      02 — Base Styles (Week 02: Typography & Color Contrast)
-      ============================================================= */
+      /* Base Styles  */
       body {
         font-family: var(--font-main);
         background: var(--uwayesu-ash);
@@ -80,10 +70,7 @@
         padding-block: 3rem;
       }
 
-      /*
-      =============================================================
-      03 — Header & Navigation (Week 05: Sticky Nav + Animations)
-      ============================================================= */
+      /* Header & Navigation  */
       header {
         background: var(--uwayesu-blue);
         color: #fff;
@@ -153,10 +140,7 @@
         color: var(--uwayesu-mint);
       }
 
-      /*
-      =============================================================
-      04 — Hero Banner (Week 03: Responsive Typography & Clamp)
-      ============================================================= */
+      /* Banner  */
       .banner {
         text-align: center;
         padding-block: 4rem 2.2rem;
@@ -182,10 +166,7 @@
         font-size: 1.1rem;
       }
 
-      /*
-      =============================================================
-      05 — About Section (Week 06: CSS Grid & Images)
-      ============================================================= */
+      /* Images */
       #about .grid {
         display: grid;
         gap: 2rem;
@@ -213,10 +194,7 @@
         }
       }
 
-      /*
-      =============================================================
-      06 — Experience Timeline (Week 07: Pseudo‑Elements)
-      ============================================================= */
+      /* Timeline  Pseudo‑Elements */
       .timeline {
         border-left: 2px solid var(--uwayesu-blue);
         padding-left: 1.2rem;
@@ -244,10 +222,7 @@
         color: var(--uwayesu-denim);
       }
 
-      /*
-      =============================================================
-      07 — Skills (Week 08: Flexbox + Micro‑Interactions)
-      ============================================================= */
+      /* Flexbox + Micro‑Interactions */
       .skills-list {
         display: flex;
         flex-wrap: wrap;
@@ -265,10 +240,7 @@
         transform: scale(1.08);
       }
 
-      /*
-      =============================================================
-      08 — Education Cards (Week 09: Grid‑auto‑fit & Shadows)
-      ============================================================= */
+      /* Grid‑auto‑fit & Shadows)  */
       .edu-grid {
         display: grid;
         gap: 1.4rem;
@@ -285,10 +257,7 @@
         transform: translateY(-5px);
       }
 
-      /*
-      =============================================================
-      09 — Contact Form (Week 10: Forms & UX States)
-      ============================================================= */
+      /* Contact Form */
       .contact-form {
         max-width: 600px;
         margin-inline: auto;
@@ -326,10 +295,7 @@
         font-size: 0.9rem;
       }
 
-      /*
-      =============================================================
-      10 — Responsive Utilities (Week 11: Media Queries)
-      ============================================================= */
+      /* Media Queries */
       @media (max-width: 768px) {
         #about .grid {
           grid-template-columns: 1fr;
@@ -357,14 +323,12 @@
     </style>
   </head>
   <body>
-    <!-- =============================================================
-         00 — Header / Navigation
-         ============================================================= -->
+    <!-- Header / Navigation-->
     <header>
       <nav class="container top-nav">
         <div class="brand">Timothée U.</div>
 
-        <!-- Mobile menu button (Week 05 task) -->
+        <!-- Mobile menu button -->
         <div class="menu-btn" aria-label="Toggle navigation" tabindex="0">☰</div>
 
         <!-- Navigation Links -->
@@ -475,9 +439,7 @@
       </div>
     </section>
 
-    <!-- =============================================================
-         06 — Co‑Curricular Activities (Week 12: Lists & Flex)
-         ============================================================= -->
+    <!-- 06 — Co‑Curricular Activities (Week 12: Lists & Flex) -->
     <section id="activities" class="section container">
       <h2>Co‑Curricular Activities</h2>
       <ul>
@@ -487,9 +449,7 @@
       </ul>
     </section>
 
-    <!-- =============================================================
-         07 — Contact Form
-         ============================================================= -->
+    <!-- 07 — Contact Form -->
     <section id="contact" class="section container">
       <h2>Let's Work Together</h2>
       <form class="contact-form" id="contactForm">
@@ -501,18 +461,14 @@
       </form>
     </section>
 
-    <!-- =============================================================
-         08 — Footer
-         ============================================================= -->
+    <!-- 08 — Footer -->
     <footer>
       <p>&copy; <span id="year"></span> Timothée Uwayesu. All rights reserved.</p>
     </footer>
 
-    <!-- ======================== JavaScript ========================= -->
+    <!--  Java Script -->
     <script>
-      /* ------------------------------------------------------------------
-         Week 05 — Accessible Mobile Nav Toggle
-      ------------------------------------------------------------------ */
+      /* Accessible Mobile Nav Toggle */
       const menuBtn = document.querySelector(".menu-btn");
       const links = document.querySelector(".links");
       menuBtn.addEventListener("click", () => links.classList.toggle("open"));
@@ -522,12 +478,10 @@
         }
       });
 
-      /* ------------------------------------------------------------------
-         Week 11 — IntersectionObserver for On‑Scroll Animations
-      ------------------------------------------------------------------ */
+      /* On‑Scroll Animations */
       const revealEls = document.querySelectorAll(
         "[data-reveal]"
-      ); /* any element can opt‑in by adding data‑reveal */
+      ); 
 
       const io = new IntersectionObserver(
         (entries) => {
@@ -543,9 +497,7 @@
 
       revealEls.forEach((el) => io.observe(el));
 
-      /* ------------------------------------------------------------------
-         Week 10 — Fake AJAX (form submission stub)
-      ------------------------------------------------------------------ */
+      /* form submission stub */
       const form = document.getElementById("contactForm");
       const statusEl = document.getElementById("formStatus");
 
